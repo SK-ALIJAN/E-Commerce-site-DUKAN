@@ -24,12 +24,12 @@
         <div id="header-first">
             <p>swim, hats, sunnies, cover-ups, bags... </p>
             <p>Peace of Paradise </p>
-            <a href="http://" target="_blank">visit the Gateway Shop</a>
+            <a href="" target="_blank">visit the Gateway Shop</a>
         </div>
         <div id="header-second">
             <p>outfitting just got cooler </p>
             <p>Denim: Every Way, Every Day </p>
-            <a href="http://" target="_blank">shop jeans,shirt,dress and beyond</a>
+            <a href="" target="_blank">shop jeans,shirt,dress and beyond</a>
         </div>
         <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="" id="right">
     </div>
@@ -40,7 +40,7 @@
             <img src="https://www.marchedufilm.com/wp-content/themes/marchedufilm/images/template/key-figure/key-figure-2.png"
                 alt="">
             <p>English($)</p>
-            <img src="https://cdn-icons-png.flaticon.com/128/8028/8028252.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/128/8028/8028252.png" alt="" id="dropdown">
         </div>
 
         <div id="language-show">
@@ -52,7 +52,8 @@
 
         <div id="log-sign">
             <img src="https://cdn-icons-png.flaticon.com/128/5645/5645106.png" alt="">
-            <p>Sign In / Sign Up</p>
+            <p id="Sign_In_Sign_Up">Sign In / Sign Up</p>
+            <button id="logout">logout</button>
         </div>
 
     </div>
@@ -67,6 +68,53 @@
                         src="https://images.ctfassets.net/5de70he6op10/y1O9tEDOvCGliGUvT9RoJ/eb8ab4734c5e3778b8b61da70ed441ac/AL_NewLogo_2.svg"
                         alt=""></a>
             </div>
+
+            <!-- login form -->
+
+            <div id="for-varify">
+
+                <div id="lgs">
+                    <p id="login">Login</p>
+                    <p id="signup">Signup</p>
+                </div>
+
+                <div id="display">
+
+                    <div id="for-login">
+                        <form action="">
+                            <input type="email" placeholder="Email Address" required id="logg-email">
+                            <input type="password" placeholder="Password" required id="pass">
+                            <div id="hide_show">
+                                <img src="https://cdn-icons-png.flaticon.com/128/6036/6036871.png" alt="" id="show">
+                                <img src="https://cdn-icons-png.flaticon.com/128/9153/9153950.png" alt="" id="hide">
+                            </div>
+                            <p id="forgot">Forgot password?</p>
+                            <input type="submit" value="Login" id="logg-submit">
+                        </form>
+                        <p id="not-member">Not a member? <span id="not_Members">Signup Now</span></p>
+                    </div>
+
+                    <div id="for-signup">
+                        <form action="">
+                            <input type="text" placeholder="Full Name" required id="signup_name">
+                            <input type="email" placeholder="Email Address" required id="signup_email">
+                            <input type="text" placeholder="Password" required id="passs">
+                            <div id="hide_show-forsignup">
+                                <img src="https://cdn-icons-png.flaticon.com/128/6036/6036871.png" alt="" id="show">
+                                <img src="https://cdn-icons-png.flaticon.com/128/9153/9153950.png" alt="" id="hide">
+                            </div>
+                            <input type="password" placeholder=" Confirm Password" required id="confirm_password">
+                            <input type="checkbox" id="checkbox"><label for="Remember me">Remember Me</label>
+                            <input type="submit" value="Signup" id="signup-submit">
+                        </form>
+                        <p>Already a member? <span id="already_a_member">Login</span> </p>
+                    </div>
+
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/128/1617/1617543.png" alt="" id="cross">
+            </div>
+
+            <!-- searchbar start here -->
 
             <div id="searchbar">
 
@@ -88,12 +136,12 @@
         <!-- nav menu -->
 
         <div id="nav-menu">
-            <p class="menu">New!</p>
-            <p class="menu">Dresses</p>
+            <p class="menu for-new">New!</p>
+            <p class="menu for-dresss">Dresses</p>
             <p class="menu">Clothing</p>
             <p class="menu">Shoes</p>
             <p class="menu">Accessories</p>
-            <p class="menu">Weddings</p>
+            <p class="menu for-weddings">Weddings</p>
             <p class="menu">Beauty & Wellness</p>
             <p class="menu">Gifts</p>
             <p class="menu">Garden & Outdoor</p>
@@ -185,6 +233,30 @@
 
         </div>
     </div>
+    </div>
+
+    <!-- product section -->
+    <div id="sort">
+        <select id="filter">
+            <option value="">Select Category</option>
+            <option value="home-decoration">home-decoration</option>
+            <option value="fragrances">fragrances</option>
+            <option value="laptops">laptops</option>
+            <option value="smartphones">smartphones</option>
+            <option value="skincare">skincare</option>
+            <option value="groceries">groceries</option>
+        </select>
+
+        <select id="sorting">
+            <option value="">Sorting &uarr; &darr;</option>
+            <option value="10-200">$ 10-200</option>
+            <option value="200-500">$ 200-500</option>
+            <option value="above-500">Above $ 500</option>
+        </select>
+    </div>
+
+    <div id="product">
+        <!-- data are append here via javascript -->
     </div>
 
 
@@ -314,7 +386,22 @@
         <p>2023 URBN.com. All Rights Reserved.</p>
 
     </footer>
+
+
+    <div id="alert-showing">
+        <p>something went wrong!</p>
+    </div>
+
+
+
+    <div id="S_logged">
+        <img src="https://cdn-icons-png.flaticon.com/128/8832/8832108.png" alt="">
+        <p>Successfully logged in </p>
+    </div>
+
+
+
 </body>
-<script src="product.js"></script>
+<script src="./script/product.js"></script>
 
 </html>

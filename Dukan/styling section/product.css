@@ -116,7 +116,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   left: 73%;
   top: 50px;
   padding: 20px;
@@ -139,6 +139,202 @@ body::-webkit-scrollbar-thumb {
   margin-right: 5px;
 }
 
+#logout {
+  border: 0;
+  outline: 0;
+  background-color: #167a92;
+  color: white;
+  padding: 7px;
+  text-transform: uppercase;
+  font-size: var(--font-size);
+  border-radius: 3px;
+  display: none;
+}
+
+/* login form */
+
+#for-varify {
+  padding-top: 10px;
+  box-sizing: content-box;
+  padding-bottom: 35px;
+  width: 22rem;
+  height: 50vh;
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+#lgs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#lgs > p {
+  margin-bottom: 20px;
+  padding: 5px 50px 5px 50px;
+  border: 2px solid rgb(232, 224, 224);
+  background-color: rgb(244, 239, 239);
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+}
+#lgs > p:nth-child(2) {
+  background-color: rgb(247, 5, 211);
+  color: white;
+}
+#display {
+  width: 90%;
+  margin: auto;
+}
+#for-login {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  display: none;
+}
+input[type="password"],
+input[type="email"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 1px solid rgb(232, 224, 224);
+  font-size: 15px;
+}
+input[type="password"] {
+  margin-bottom: 5px;
+}
+#hide_show {
+  position: absolute;
+  top: 26%;
+  left: 90%;
+  cursor: pointer;
+}
+#hide,
+#show {
+  width: 70%;
+}
+#hide {
+}
+#show {
+  display: none;
+}
+#forgot {
+  color: rgb(247, 5, 211);
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+#forgot + input[type="submit"] {
+  width: 100%;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    rgb(247, 0, 201),
+    rgb(164, 85, 152)
+  );
+
+  color: rgb(247, 247, 247);
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#not-member {
+  font-size: 15px;
+  margin-top: 20px;
+}
+#not-member > span {
+  color: rgb(247, 5, 211);
+  cursor: pointer;
+}
+
+/* for signup section here */
+
+#for-signup {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  /* display: none; */
+}
+
+#for-signup input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid rgb(232, 224, 224);
+  font-size: 15px;
+}
+
+#checkbox {
+  position: absolute;
+  top: 67%;
+  right: 45%;
+  accent-color: rgb(206, 25, 179);
+  width: 0.7rem;
+  height: 0.7rem;
+  cursor: pointer;
+}
+label {
+  margin-left: 10%;
+  font-size: 15px;
+  position: relative;
+  bottom: 1px;
+  margin-bottom: 3px;
+}
+#signup-submit {
+  width: 100%;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    rgb(247, 0, 201),
+    rgb(164, 85, 152)
+  );
+  color: white;
+  cursor: pointer;
+}
+#for-signup > form + P {
+  font-size: 15px;
+}
+#for-signup > form + P > span {
+  color: rgb(206, 25, 179);
+  font-weight: 600;
+  cursor: pointer;
+}
+#hide_show-forsignup {
+  position: absolute;
+  top: 35%;
+  left: 90%;
+  cursor: pointer;
+}
+#hide,
+#show {
+  width: 70%;
+}
+#hide {
+}
+#show {
+  display: none;
+}
+
+#cross {
+  position: fixed;
+  width: 2rem;
+  left: 22rem;
+  bottom: 21rem;
+  cursor: pointer;
+}
+
 /* navbar */
 
 #navbars {
@@ -159,7 +355,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
 }
-#logo >:nth-child(1) {
+#logo > :nth-child(1) {
   letter-spacing: 8px;
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
@@ -170,7 +366,7 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   color: #167a92;
 }
-#logo>:nth-child(2) {
+#logo > :nth-child(2) {
   width: 8rem;
   border: 0.1px solid #5e767855;
   padding: 15px 10px 10px 10px;
@@ -220,6 +416,7 @@ body::-webkit-scrollbar-thumb {
   width: 1.5rem;
   cursor: pointer;
   margin-left: 15px;
+  padding-top: 14px;
 }
 /* #busket img{
   width: 15rem;
@@ -308,11 +505,98 @@ body::-webkit-scrollbar-thumb {
   color: #167a92;
   text-decoration: underline;
 }
+/* 
+filter */
+#sort{
+display: flex;
+justify-content: space-between;
+padding: 40px;
+padding-bottom: 0;
+}
 
 
+#filter,#sorting{
+border: 0;
+padding: 10px;
+cursor: pointer;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+border-radius: 4px;
+font-weight: 600;
+font-size: 15px;
+}
 
+/* prodoct body section */
+#product {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
 
-
+#product > div {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  overflow: hidden;
+  position: relative;
+}
+#product img {
+  width: 100%;
+}
+#product > div > :nth-child(1) {
+  background-color: #167a92;
+  width: max-content;
+  color: #f5f5f5;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding: 5px;
+  font-size: var(--font-size);
+}
+#product > div > :nth-child(3) {
+  text-align: center;
+  font-weight: 700;
+  color: #167a92;
+  margin-bottom: 5px;
+}
+#product > div > :nth-child(4) {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 15px 0px 15px;
+}
+#product > div > :nth-child(4) > :nth-child(1)::before {
+  content: "$ ";
+  font-size: large;
+}
+#product > div > :nth-child(4) > :nth-child(2)::after {
+  content: " DISC";
+  background-color: #167a92;
+  color: #f5f5f5;
+  font-weight: 200;
+  font-size: var(--font-size);
+  padding: 5px;
+  margin-left: 3px;
+}
+#product > div > :nth-child(5) {
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+#product > div > :nth-child(6) {
+  font-size: var(--font-size);
+  margin: 0px 15px 10px 15px;
+  text-align: center;
+}
+#product > div > button {
+  background-color: #167a92;
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  width: 50%;
+  margin: auto;
+  display: block;
+  color: white;
+  cursor: pointer;
+}
 
 /* Sign Up for Email */
 footer {
@@ -399,8 +683,8 @@ input[type="submit"] {
 }
 
 /* social link */
-footer{
-padding-bottom: 50px;
+footer {
+  padding-bottom: 50px;
 }
 #social {
   padding: 40px;
@@ -441,4 +725,42 @@ padding-bottom: 50px;
   text-align: center;
   font-size: var(--font-size);
   margin-top: 10px;
+}
+
+/* alert showing  */
+
+#alert-showing {
+  width: 25rem;
+  background-color: rgb(255, 9, 9);
+  color: white;
+  text-transform: capitalize;
+  padding: 5px;
+  border-radius: 5px;
+  position: fixed;
+  top: 10px;
+  z-index: 6;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 2px;
+  display: none;
+}
+#S_logged {
+  width: 25rem;
+  background-color: white;
+  color: rgb(12, 12, 12);
+  text-transform: capitalize;
+  padding: 10px;
+  border-radius: 5px;
+  position: fixed;
+  top: 10px;
+  z-index: 6;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+  display: none;
 }

@@ -27,6 +27,38 @@ image.addEventListener("click", () => {
   }, 2000);
 });
 
+// navbar section
+let for_new = document.querySelector(".for-new");
+let for_dress = document.querySelector(".for-dresss");
+let for_wedding = document.querySelector(".for-weddings");
+
+let new1 = document.querySelector("#for-new");
+let wed2 = document.querySelector("#under-Weddings");
+let cloth3 = document.querySelector("#for-dress");
+
+for_new.addEventListener("click", () => {
+  new1.style.display = "flex";
+  wed2.style.display = "none";
+  cloth3.style.display = "none";
+});
+
+for_dress.addEventListener("click", () => {
+  new1.style.display = "none";
+  wed2.style.display = "none";
+  cloth3.style.display = "flex";
+});
+
+for_wedding.addEventListener("click", () => {
+  new1.style.display = "none";
+  wed2.style.display = "flex";
+  cloth3.style.display = "none";
+});
+
+document.querySelector("#navbar").addEventListener("click", () => {
+  new1.style.display = "none";
+  wed2.style.display = "none";
+  cloth3.style.display = "none";
+});
 
 // loggin form
 let login_button = document.querySelector("#login");
@@ -76,27 +108,37 @@ let alert_message = document.querySelector("#alert-showing p");
 let already_member = document.querySelector("#already_a_member");
 let not_member = document.querySelector("#not_Members"); // all from singup
 
+// for user_login
+let logg_email = document.querySelector("#logg-email");
+let logg_password = document.getElementById("pass");
+let logg_submit = document.querySelector("#logg-submit");
+let loggin_display = document.getElementById("S_logged");
+let logout_button = document.querySelector("#logout"); //log out button
+let cross = document.querySelector("#cross");
+
 let user_data = JSON.parse(localStorage.getItem("details"));
 if (user_data == null) {
-  user_data = [];         // data send to local storage
+  user_data = []; // data send to local storage
 }
 
 Sign_In_Sign_Up.addEventListener("click", () => {
   login_form.style.display = "block";
-}); 
+});
 
-signup_submit.addEventListener("click", (ele) => { // onsubmit of signup
+signup_submit.addEventListener("click", (ele) => {
+  // onsubmit of signup
   ele.preventDefault();
   let red_flag = false;
   let signal = 0;
 
   form.forEach((ele) => {
     if (ele.value !== "") {
-      signal++;      // checking if any field are empty or not 
+      signal++; // checking if any field are empty or not
     }
   });
 
-  if (signal == form.length) {  // after varify
+  if (signal == form.length) {
+    // after varify
     if (password.value !== confirm_password.value) {
       alert_showing.style.display = "block";
       alert_message.textContent = "Oops! Passwords don't Match";
@@ -163,13 +205,21 @@ already_member.addEventListener("click", () => {
   signup_display.style.display = "none";
 });
 
-// for user_login
-let logg_email = document.querySelector("#logg-email");
-let logg_password = document.getElementById("pass");
-let logg_submit = document.querySelector("#logg-submit");
-let loggin_display = document.getElementById("S_logged");
-let logout_button = document.querySelector("#logout"); //log out button
-let cross = document.querySelector("#cross");
+window.addEventListener("load", () => {
+  let varify = localStorage.getItem("login_status");
+  console.log(varify);
+  if (varify == "true") {
+    Sign_In_Sign_Up.style.display = "none";
+    logout_button.style.display = "block";
+    clearTimeout(clear);
+  } else {
+    var clear = setTimeout(() => {
+      Sign_In_Sign_Up.style.display = "block";
+      logout_button.style.display = "none";
+      login_form.style.display = "block";
+    }, 10000);
+  }
+});
 
 logg_submit.addEventListener("click", () => {
   let flag = 0;
@@ -197,8 +247,8 @@ logg_submit.addEventListener("click", () => {
     }
   });
 
-
-  if (flag == 2) {  // checking both are true or not 
+  if (flag == 2) {
+    // checking both are true or not
     login_form.style.display = "none";
     loggin_display.style.display = "block";
 
@@ -222,19 +272,4 @@ cross.addEventListener("click", () => {
   setTimeout(() => {
     login_form.style.display = "none";
   }, 200);
-}); 
-
-window.addEventListener("load", () => {
-  let varify = localStorage.getItem("login_status");
-  if (varify == true) {
-    Sign_In_Sign_Up.style.display = "none";
-    logout_button.style.display = "block";
-    localStorage.setItem("login_status", true);
-  } else {
-    setTimeout(() => {
-      Sign_In_Sign_Up.style.display = "block";
-      logout_button.style.display = "none";
-      login_form.style.display = "block";
-    }, 10000);
-  }
 });
