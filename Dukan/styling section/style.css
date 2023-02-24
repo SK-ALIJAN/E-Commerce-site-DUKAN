@@ -336,7 +336,7 @@ label {
 #cross {
   position: fixed;
   width: 2rem;
-  left: 22rem;
+  left: 22.5rem;
   bottom: 21rem;
   cursor: pointer;
 }
@@ -413,9 +413,9 @@ label {
   left: 82.2%;
   padding: 11.5px;
   box-sizing: content-box;
-  /* background-color: #167a92;
+  background-color: #167a92;
   border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px; */
+  border-bottom-right-radius: 5px;
   cursor: pointer;
   margin-left: 10px;
 }
@@ -426,6 +426,7 @@ label {
   width: 1.5rem;
   cursor: pointer;
   margin-left: 15px;
+  padding-top: 14px;
 }
 /* #busket img{
   width: 15rem;
@@ -669,10 +670,10 @@ label {
   font-size: var(--font-size);
   cursor: pointer;
 }
-
+/* 
 /* trend now and you may also know  */
 
-#you-may,
+/* #you-may,
 #trand {
   padding: 40px;
   padding-top: 0px;
@@ -682,19 +683,20 @@ label {
 #trand h5 {
   font-weight: 200;
 }
-#you-may h5 + hr,
-#trand h5 + hr,
+/* #you-may h5 + hr,
+#trand h5 + hr, */
 #explore h5 + hr {
   margin-bottom: 20px;
   border: 0.1px solid #5e767855;
   border-bottom: 0;
-}
+} 
 
 /* more expore */
 
 #explore {
   padding: 40px;
   position: relative;
+  bottom: 20px;
 }
 #explore h5 {
   font-weight: 200;
