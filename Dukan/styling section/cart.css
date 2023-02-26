@@ -785,7 +785,7 @@ footer {
 
 /* media quary section here */
 
-@media screen and (max-width: 950px) and (min-width: 650px) {
+@media screen and (max-width: 950px) and (min-width: 550px) {
   #header {
     display: none;
   }
