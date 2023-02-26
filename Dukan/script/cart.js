@@ -1,4 +1,3 @@
-
 // navbar section
 let for_new = document.querySelector(".for-new");
 let for_dress = document.querySelector(".for-dresss");
@@ -32,14 +31,12 @@ document.querySelector("#navbar").addEventListener("click", () => {
   cloth3.style.display = "none";
 });
 
-
 // loggin form
 let login_button = document.querySelector("#login");
 let sign_button = document.querySelector("#signup");
 
 let login_display = document.querySelector("#for-login");
 let signup_display = document.querySelector("#for-signup");
-
 
 // for signup section here
 
@@ -175,7 +172,8 @@ already_member.addEventListener("click", () => {
   signup_display.style.display = "none";
 });
 
-logg_submit.addEventListener("click", () => {
+logg_submit.addEventListener("click", (e) => {
+e.preventDefault();
   let flag = 0;
   user_data.forEach((ele) => {
     if (ele.email === logg_email.value) {
@@ -227,6 +225,35 @@ cross.addEventListener("click", () => {
     login_form.style.display = "none";
   }, 200);
 });
+
+
+
+
+// humburger section 
+let humburger=document.querySelector("#humburger");
+let nav_menu=document.querySelector("#nav-menu");
+
+humburger.addEventListener("click",()=>{
+
+  if (nav_menu.style.display=="block") {
+    nav_menu.style.display="none"
+  }
+  else{
+  nav_menu.style.display="block"
+  }
+})
+
+// input color
+let input=document.querySelectorAll("input");
+input.forEach((ele)=>{
+ ele.addEventListener("focus",()=>{
+  ele.style.border="none"
+  ele.style.outline=" 0.1px solid #5e767855"
+ })
+})
+
+
+
 
 // append data
 let cart_price = document.querySelector("#cart_show_price");
@@ -335,26 +362,48 @@ function price(arr) {
 
 // procede to buy
 let order_place = document.querySelector("#order-place");
+let are_you_sure = document.querySelector("#sure");
+let yes = document.querySelector("#sure-button");
+let cancel = document.querySelector("#sure-button2");
 
 let procede = document.querySelector("#proceed-to-order");
 procede.addEventListener("click", () => {
-  let varify=localStorage.getItem("login_status")
-  if (varify=="false"){
+  let varify = localStorage.getItem("login_status");
+  if (varify == "false") {
     login_form.style.display = "block";
-  }
-   else {
+  } // check if already logg in
+  else {
     if (fetch_data.length !== 0) {
-      order_place.style.display = "block";
-      fetch_data = [];
-      localStorage.setItem("my_data", JSON.stringify(fetch_data));
-      displays(fetch_data); // for display
-      price(fetch_data); // for cart price
-      somehting(); // for image
+      //check if your cart is empty or noy
+      are_you_sure.style.display = "block";
 
-      setTimeout(() => {
-        order_place.style.display = "none";
-      }, 2000);
-    } else {
+      // if click yes
+      yes.addEventListener("click", () => {
+        setTimeout(() => {
+          order_place.style.display = "block";
+          fetch_data = [];
+          localStorage.setItem("my_data", JSON.stringify(fetch_data));
+          displays(fetch_data); // for display
+          price(fetch_data); // for cart price
+          somehting(); // for image
+
+          setTimeout(() => {
+            order_place.style.display = "none";
+          }, 2000);
+        }, 1000);
+        are_you_sure.style.display = "none";
+      });
+
+      // if click cancel
+      cancel.addEventListener("click", () => {
+        setTimeout(() => {
+          are_you_sure.style.display = "none";
+        }, 500);
+      });
+    }
+
+    // if cart is empty
+    else {
       alert_showing.style.display = "block";
       alert_message.textContent = "Your cart is Empty !";
       setTimeout(() => {
