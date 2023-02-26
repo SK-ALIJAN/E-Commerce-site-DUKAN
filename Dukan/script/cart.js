@@ -266,7 +266,7 @@ let fetch_data = JSON.parse(localStorage.getItem("my_data"));
 if (fetch_data == null) fetch_data = [];
 
 displays(fetch_data);
-console.log(append_data);
+// console.log(append_data);
 function displays(arr) {
   append_data.innerHTML = "";
   arr.forEach((ele) => {

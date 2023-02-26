@@ -83,7 +83,7 @@ input.forEach((ele)=>{
   ele.style.outline=" 0.1px solid #5e767855"
  })
 
- console.log(ele);
+
 })
 
 // loggin form
@@ -233,7 +233,7 @@ already_member.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
   let varify = localStorage.getItem("login_status");
-  console.log(varify);
+  // console.log(varify);
   if (varify == "true") {
     Sign_In_Sign_Up.style.display = "none";
     logout_button.style.display = "block";
