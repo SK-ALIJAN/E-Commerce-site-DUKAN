@@ -280,7 +280,6 @@ e.preventDefault();
       }, 2000);
     }
   });
-    console.log(flag);
   if (flag >= 2) { // checking both are true or not
 
     login_form.style.display = "none";
