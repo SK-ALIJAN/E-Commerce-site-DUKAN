@@ -64,10 +64,30 @@ document.querySelector("#navbar").addEventListener("click", () => {
 
 
 
+// humburger section 
+let humburger=document.querySelector("#humburger");
+let nav_menu=document.querySelector("#nav-menu");
+
+humburger.addEventListener("click",()=>{
+
+  if (nav_menu.style.display=="block") {
+    nav_menu.style.display="none"
+  }
+  else{
+  nav_menu.style.display="block"
+  }
+})
+
+// input color
+let input=document.querySelectorAll("input");
+input.forEach((ele)=>{
+ ele.addEventListener("focus",()=>{
+  ele.style.border="none"
+  ele.style.outline=" 0.1px solid #5e767855"
+ })
 
 
-
-
+})
 
 
 
@@ -218,7 +238,7 @@ already_member.addEventListener("click", () => {
   signup_display.style.display = "none";
 });
 
-window.addEventListener("load", () => {
+window.addEventListener("load", () => { // onload checking you are already member or not 
   let varify = localStorage.getItem("login_status");
 
   if (varify == "true") {
@@ -234,7 +254,8 @@ window.addEventListener("load", () => {
   }
 });
 
-logg_submit.addEventListener("click", () => {
+logg_submit.addEventListener("click", (e) => {
+e.preventDefault();
   let flag = 0;
   user_data.forEach((ele) => {
     if (ele.email === logg_email.value) {
@@ -259,9 +280,9 @@ logg_submit.addEventListener("click", () => {
       }, 2000);
     }
   });
-  console.log(flag);
-  if (flag >= 2) {
-    // checking both are true or not
+    console.log(flag);
+  if (flag >= 2) { // checking both are true or not
+
     login_form.style.display = "none";
     loggin_display.style.display = "block";
 

@@ -689,7 +689,7 @@ label {
   margin-bottom: 20px;
   border: 0.1px solid #5e767855;
   border-bottom: 0;
-} 
+}
 
 /* more expore */
 
@@ -764,11 +764,17 @@ footer {
   font-size: var(--font-size);
   margin-bottom: 20px;
 }
+
+#email-form {
+  display: flex;
+}
 #for-email > form label {
   display: block;
   font-size: var(--font-size);
   font-weight: 600;
   color: rgb(65, 60, 60);
+  position: relative;
+  right: 40px;
 }
 #email {
   height: 2.5rem;
@@ -912,4 +918,86 @@ footer {
   letter-spacing: 2px;
   font-weight: 600;
   display: none;
+}
+
+/* media quary section here */
+
+@media screen and (max-width: 950px) and (min-width: 650px) {
+  #header {
+    display: none;
+  }
+
+  #navbars {
+    height: 7.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  #navbar {
+    flex-direction: column;
+    border-bottom: none;
+  }
+  #logo {
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  #logo > :nth-child(1) {
+    width: 45%;
+    text-align: center;
+    height: max-content;
+  }
+  #logo > :nth-child(2) {
+    width: 45%;
+    text-align: center;
+    height: max-content;
+    border-left: 0.1px solid #5e767855;
+  }
+
+  #searchbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #searching {
+    width: 90%;
+    margin-right: 0;
+  }
+  #search-submit {
+    left: 83.9%;
+    padding: 8.9px;
+  }
+  #busket {
+    position: relative;
+    right: 30px;
+  }
+  #humburger {
+    display: block;
+    position: relative;
+    bottom: 6px;
+  }
+  #searchbar > :nth-child(1) {
+    width: 100%;
+  }
+
+  #nav-menu {
+    flex-flow: column;
+    position: absolute;
+    right: 10px;
+    top: 90%;
+    background-color: teal;
+    color: white;
+    height: max-content;
+    line-height: 40px;
+    border-radius: 5px;
+    display: none;
+  }
+
+  /* #nav-menu > p {
+  margin-right: 15px;
+} */
+  #nav-menu > p:hover {
+    color: #0c0c0c;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #0e0e0e;
+    cursor: pointer;
+  }
 }

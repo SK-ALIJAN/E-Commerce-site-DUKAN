@@ -60,6 +60,32 @@ document.querySelector("#navbar").addEventListener("click", () => {
   cloth3.style.display = "none";
 });
 
+
+// humburger section 
+let humburger=document.querySelector("#humburger");
+let nav_menu=document.querySelector("#nav-menu");
+
+humburger.addEventListener("click",()=>{
+
+  if (nav_menu.style.display=="block") {
+    nav_menu.style.display="none"
+  }
+  else{
+  nav_menu.style.display="block"
+  }
+})
+
+// input color
+let input=document.querySelectorAll("input");
+input.forEach((ele)=>{
+ ele.addEventListener("focus",()=>{
+  ele.style.border="none"
+  ele.style.outline=" 0.1px solid #5e767855"
+ })
+
+ console.log(ele);
+})
+
 // loggin form
 let login_button = document.querySelector("#login");
 let sign_button = document.querySelector("#signup");
