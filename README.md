@@ -10,12 +10,12 @@
 # E-Commerce-site-DUKAN
 
 Anthropologie Clone
-A E-commerse site of india , where you can buy diffrent diffrent product according to your need
-Features :
-•Built Login Sign-up Authentication
-• Add to Cart Implementation
-Tech Stack:
-•Html | Css | Javascript | Api | Localstorage
+A E-commerse site of india , where you can buy diffrent diffrent product according to your need <br>
+Features : <br>
+•Built Login Sign-up Authentication <br>
+• Add to Cart Implementation <br>
+Tech Stack: <br>
+•Html | Css | Javascript | Api | Localstorage <br>
 <br>
 
 
