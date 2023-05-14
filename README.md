@@ -8,9 +8,10 @@
 This e-commerce website has been developed by a single person and includes features such as user authentication, login/sign-up functionality, and the ability to check user accounts. It also has a fully implemented "Add to Cart" feature for a seamless shopping experience.<br><br>
 ❖ Features : <br>
 • Built Login Sign-up Authentication <br>
+• Check User <br>
 • Add to Cart Implementation <br>
 
-## Tech Stack: <br>
+## ❖ Tech Stack: <br>
 ❖ Html ❖ Core Css ❖ Vanilla JavaScript ❖ MockApi ❖ Localstorage <br>
 <br>
 
@@ -24,7 +25,7 @@ https://user-images.githubusercontent.com/106768235/221397053-153ace83-089c-4dbf
 https://my-dukan-e-commerce.netlify.app/index.html
 
 
-## Authors
+## ❖ Authors
 
 - Sk Alijan <br>
 The entire development of this project was done by a single individual in 4 days.
