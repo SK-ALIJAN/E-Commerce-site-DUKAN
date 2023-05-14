@@ -5,11 +5,11 @@
 # ❖ E-Commerce-site-DUKAN (Anthropologie Clone)
 
  <br>
-A E-commerse site of india , where you can buy diffrent diffrent product according to your need <br>
-Features : <br>
+This e-commerce website has been developed by a single person and includes features such as user authentication, login/sign-up functionality, and the ability to check user accounts. It also has a fully implemented "Add to Cart" feature for a seamless shopping experience.<br>
+❖ Features : <br>
 • Built Login Sign-up Authentication <br>
 • Add to Cart Implementation <br>
-# Tech Stack: <br>
+## Tech Stack: <br>
 ❖ Html ❖ Core Css ❖ Vanilla JavaScript ❖ MockApi ❖ Localstorage <br>
 <br>
 
@@ -26,7 +26,7 @@ https://my-dukan-e-commerce.netlify.app/index.html
 ## Authors
 
 - Sk Alijan <br>
-The entire development of this project was done by a single individual.
+The entire development of this project was done by a single individual in 4 days.
 
 ## 🔗 Links
 <!-- [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/) -->
