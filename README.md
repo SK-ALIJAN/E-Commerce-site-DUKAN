@@ -2,13 +2,14 @@
 <h1 align="center">Hi 🙋‍♂️, I'm Sk Alijan</h1>
 <h3 align="center">A Passionate full Stack Web Developer </h3>
 
-# ❖ E-Commerce-site-DUKAN (Anthropologie Clone)
+# ❖ DUKAN (Anthropologie Clone)
 
  <br>
-This e-commerce website has been developed by a single person and includes features such as user authentication, login/sign-up functionality, and the ability to check user accounts. It also has a fully implemented "Add to Cart" feature for a seamless shopping experience.<br>
+This e-commerce website has been developed by a single person and includes features such as user authentication, login/sign-up functionality, and the ability to check user accounts. It also has a fully implemented "Add to Cart" feature for a seamless shopping experience.<br><br>
 ❖ Features : <br>
 • Built Login Sign-up Authentication <br>
 • Add to Cart Implementation <br>
+
 ## Tech Stack: <br>
 ❖ Html ❖ Core Css ❖ Vanilla JavaScript ❖ MockApi ❖ Localstorage <br>
 <br>
