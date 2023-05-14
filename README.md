@@ -2,41 +2,36 @@
 <h1 align="center">Hi 🙋‍♂️, I'm Sk Alijan</h1>
 <h3 align="center">A Passionate full Stack Web Developer </h3>
 
-`🚀 About Me:`
-- 🔭 I’m currently working on **Full stack web devlopment**
-- 👀 I’m interested in full stack web devlopment
+# ❖ E-Commerce-site-DUKAN (Anthropologie Clone)
 
-
-# E-Commerce-site-DUKAN
-
-Anthropologie Clone <br>
+ <br>
 A E-commerse site of india , where you can buy diffrent diffrent product according to your need <br>
 Features : <br>
-•Built Login Sign-up Authentication <br>
+• Built Login Sign-up Authentication <br>
 • Add to Cart Implementation <br>
-Tech Stack: <br>
-•Html | Css | Javascript | Api | Localstorage <br>
+# Tech Stack: <br>
+❖ Html ❖ Core Css ❖ Vanilla JavaScript ❖ MockApi ❖ Localstorage <br>
 <br>
 
 
-## Overview of website
+## ❖ Overview of website
 https://user-images.githubusercontent.com/106768235/221397053-153ace83-089c-4dbf-9dec-659a913b8752.mp4
 
 
 
-## To visit 
+## ❖ To visit 
 https://my-dukan-e-commerce.netlify.app/index.html
 
 
 ## Authors
 
-- Sk Alijan
-
+- Sk Alijan <br>
+The entire development of this project was done by a single individual.
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
+<!-- [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/) -->
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alijan786/)
+<!-- [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/) -->
 
 
 ## Badges
