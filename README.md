@@ -19,6 +19,12 @@ This e-commerce website has been developed by a single person and includes featu
 ## ❖ Overview of website
 https://user-images.githubusercontent.com/106768235/221397053-153ace83-089c-4dbf-9dec-659a913b8752.mp4
 
+## ❖ Few images
+<img src="https://github.com/SK-ALIJAN/E-Commerce-site-DUKAN/assets/106768235/2abd400c-508e-4451-a80f-a2c949634d6e">
+<img src="https://github.com/SK-ALIJAN/E-Commerce-site-DUKAN/assets/106768235/3a38ecd8-5d2e-41b5-a261-3b5f293517ef">
+<img src="https://github.com/SK-ALIJAN/E-Commerce-site-DUKAN/assets/106768235/60d1b090-9425-4479-9562-126c8740d9aa">
+<img src="https://github.com/SK-ALIJAN/E-Commerce-site-DUKAN/assets/106768235/ad9bf0a6-8a01-4c1d-b47a-308c299de6b5">
+<img src="https://github.com/SK-ALIJAN/E-Commerce-site-DUKAN/assets/106768235/df986b59-e4af-48a1-86b3-33d8e3e09d51">
 
 
 ## ❖ To visit 
